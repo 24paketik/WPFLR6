@@ -59,11 +59,18 @@ namespace WpfLR6
                 a.Width =Math.Max(20, s.Width + q.X - p.X);
                 a.Height = Math.Max(20, s.Height + q.Y - p.Y);
             }
+            if (e.ChangedButton == MouseButton.Left)
+                a.Cursor = Cursors.Hand;
+            else
+                if (e.ChangedButton == MouseButton.Right)
+                a.Cursor = Cursors.SizeNWSE;
+            
         }
 
         private void canvas1_MouseUp(object sender, MouseButtonEventArgs e)
         {
             (e.Source as FrameworkElement).ReleaseMouseCapture();
+            (e.Source as FrameworkElement).Cursor = null;
         }
     }
 }
