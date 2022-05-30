@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\comp0715\\.nuget\\packages\\": {}
+    "C:\\Users\\comp0713\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projectC#\\2-2 ИС\\Смирнов Денис\\WPFLR6\\WpfLR6\\WpfLR6\\WpfLR6.csproj",
+      "projectUniqueName": "C:\\Users\\comp0713\\Desktop\\Smst1\\WPFLR6\\WpfLR6\\WpfLR6\\WpfLR6.csproj",
       "projectName": "WpfLR6",
-      "projectPath": "C:\\projectC#\\2-2 ИС\\Смирнов Денис\\WPFLR6\\WpfLR6\\WpfLR6\\WpfLR6.csproj",
-      "packagesPath": "C:\\Users\\comp0715\\.nuget\\packages\\",
-      "outputPath": "C:\\projectC#\\2-2 ИС\\Смирнов Денис\\WPFLR6\\WpfLR6\\WpfLR6\\obj\\",
+      "projectPath": "C:\\Users\\comp0713\\Desktop\\Smst1\\WPFLR6\\WpfLR6\\WpfLR6\\WpfLR6.csproj",
+      "packagesPath": "C:\\Users\\comp0713\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\comp0713\\Desktop\\Smst1\\WPFLR6\\WpfLR6\\WpfLR6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\comp0715\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\comp0713\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

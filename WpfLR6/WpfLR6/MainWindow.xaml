@@ -8,7 +8,7 @@
         Title="Mouse" Height="350" Width="525"
         WindowStartupLocation="CenterScreen">
     <Canvas x:Name="canvas1" Background="White" MouseDown="rect1_MouseDown"
-                   MouseMove="rect1_MouseMove">
+                   MouseMove="rect1_MouseMove" MouseUp="canvas1_MouseUp">
         <Rectangle x:Name="rect1" Fill="Red" Height="100"
                    Canvas.Left="10" Stroke="Black" Canvas.Top="10"
                    Width="140" />

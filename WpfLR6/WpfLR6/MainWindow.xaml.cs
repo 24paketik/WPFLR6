@@ -21,6 +21,7 @@ namespace WpfLR6
     public partial class MainWindow : Window
     {
         Point p;
+        Size s;
 
         public MainWindow()
         {
@@ -29,10 +30,12 @@ namespace WpfLR6
 
         private void rect1_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            (e.Source as FrameworkElement).CaptureMouse();
             if (e.Source == canvas1)
                 return;
             var a = e.Source as Rectangle;
             p = e.GetPosition(a);
+            s = new Size(a.ActualWidth, a.ActualHeight);
         }
 
         private void rect1_MouseMove(object sender, MouseEventArgs e)
@@ -47,9 +50,20 @@ namespace WpfLR6
             Title = String.Format("Mouse - {0} {1}", a.Name, q);
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                Canvas.SetLeft(a, Canvas.GetLeft(a) + q.X - p.X);
-                Canvas.SetTop(a, Canvas.GetTop(a)+q.Y - p.Y);
+                Canvas.SetLeft(a, Math.Min(0, Canvas.GetLeft(a) + q.X - p.X));
+                Canvas.SetTop(a, Math.Min(0, Canvas.GetTop(a)+q.Y - p.Y));
             }
+            else
+                if(e.RightButton == MouseButtonState.Pressed)
+            {
+                a.Width =Math.Max(20, s.Width + q.X - p.X);
+                a.Height = Math.Max(20, s.Height + q.Y - p.Y);
+            }
+        }
+
+        private void canvas1_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            (e.Source as FrameworkElement).ReleaseMouseCapture();
         }
     }
 }
