@@ -15,5 +15,13 @@
         <Rectangle x:Name="rect2" Fill="Blue" Height="100"
                    Canvas.Left="10" Stroke="Black" Canvas.Top="115"
                    Width="140"/>
+        <Button x:Name="button1" Content="Button" Canvas.Left="197"
+                Canvas.Top="10" Width="75"/>
+        <Label x:Name="label1" BorderBrush="Black" BorderThickness="1"
+               Content="Label" Canvas.Left="197" Canvas.Top="69"/>
+        <TextBlock x:Name="textBlock1" Background="Yellow"
+                   Canvas.Left="197" Text="TextBlock" Canvas.Top="139"/>
+        <TextBox x:Name="textBox1" Height="23" Canvas.Left="197"
+                 Text="TextBox" Canvas.Top="192" Width="120"/>
     </Canvas>
 </Window>

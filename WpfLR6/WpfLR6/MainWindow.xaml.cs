@@ -33,7 +33,7 @@ namespace WpfLR6
             (e.Source as FrameworkElement).CaptureMouse();
             if (e.Source == canvas1)
                 return;
-            var a = e.Source as Rectangle;
+            var a = e.Source as FrameworkElement;
             p = e.GetPosition(a);
             s = new Size(a.ActualWidth, a.ActualHeight);
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -51,7 +51,7 @@ namespace WpfLR6
                 Title = "Mouse";
                 return;
             }
-            var a = e.Source as Rectangle;
+            var a = e.Source as FrameworkElement;
             Point q = e.GetPosition(a);
             Title = String.Format("Mouse - {0} {1}", a.Name, q);
             if (e.LeftButton == MouseButtonState.Pressed)
